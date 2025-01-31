@@ -1,0 +1,23 @@
+#divider {
+  padding: 10px;
+}
+
+#button {
+  margin-top: 5px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: lightblue;
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+}
+#button:hover {
+  background-color: rgb(108, 155, 171);
+}
+
+.available {
+  color: rgb(0, 255, 0);
+}
+
+.unavailable {
+  color: rgb(255, 0, 0);
+}
