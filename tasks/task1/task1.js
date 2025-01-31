@@ -20,8 +20,7 @@ if (books.length === 0) {
   console.log("Nema unesenih knjiga.");
 } else {
   let avgPrice = totalPrice / books.length;
-  console.log("Prosječna cijena knjiga:");
-  console.log(avgPrice.toFixed(2));
+  console.log("Prosječna cijena knjiga:" + avgPrice.toFixed(2));
 
   books.forEach((book) => (book.deviation = Math.abs(book.price - avgPrice)));
   let mostDeviatedBook = books.reduce(
