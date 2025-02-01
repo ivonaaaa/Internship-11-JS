@@ -18,9 +18,7 @@ while (true) {
   employees.push({ firstName, lastName, sector, salary });
   totalSalary += salary;
 
-  if (!sectors[sector]) {
-    sectors[sector] = { totalSalary: 0, employees: [] };
-  }
+  if (!sectors[sector]) sectors[sector] = { totalSalary: 0, employees: [] };
   sectors[sector].totalSalary += salary;
   sectors[sector].employees.push({ firstName, lastName, salary });
 }
